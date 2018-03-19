@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'show', to: 'static#show'
+  resources :coupons, only: [:post, :get, :create, :index, :show, :new]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
